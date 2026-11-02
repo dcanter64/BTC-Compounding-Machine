@@ -1,0 +1,22 @@
+# Local Python virtual environment
+.venv/
+data/cache/
+output/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.so
+
+# Test, coverage, and type-checker caches
+.pytest_cache/
+.pytest_tmp/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
