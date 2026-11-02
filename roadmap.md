@@ -37,13 +37,19 @@ Our implementation must remain transparent so every calculation can be inspected
 
 ## Implementation Status
 
-Last reviewed: 2026-09-22
+Last reviewed: 2026-11-02
 
-- **Phase 1 - Complete.** Daily BTC-USD retrieval, strict validation, local caching, log-price regression, residual sigma/z-scores, price-space sigma bands, and the baseline chart are implemented and tested.
-- **Phase 2 - Complete.** Configurable BUY/SELL/HOLD states, entry-only threshold-crossing events, the signal-event CSV, and chart markers are implemented and tested.
-- **Phase 3 - Complete.** A spot-only, exact-dollar ledger engine, skipped-event audit, and portfolio summary are implemented and tested. It is not a historical backtest.
-- **Phase 4 - Complete.** The backtest uses prior-close-only expanding regressions, next-day-open execution, the existing Phase 2 signals and Phase 3 ledger, equivalent-capital buy-and-hold, daily valuation, total return, maximum drawdown, CSV/JSON reports, and a comparison chart.
-- **Phase 5 - Complete.** The Streamlit dashboard shows current valuation and signal state, editable strategy settings, threshold prices/distances, marked trend and backtest charts, transaction history, and portfolio/benchmark summaries. It was launched and smoke-tested locally.
+Status legend:
+
+- `[X]` complete
+- `[ ]` not started
+- `[-]` partially complete
+
+- [X] **Phase 1.** Daily BTC-USD retrieval, strict validation, local caching, log-price regression, residual sigma/z-scores, price-space sigma bands, and the baseline chart are implemented and tested.
+- [X] **Phase 2.** Configurable BUY/SELL/HOLD states, entry-only threshold-crossing events, the signal-event CSV, and chart markers are implemented and tested.
+- [X] **Phase 3.** A spot-only, exact-dollar ledger engine, skipped-event audit, and portfolio summary are implemented and tested. It is not a historical backtest.
+- [X] **Phase 4.** The backtest uses prior-close-only expanding regressions, next-day-open execution, the existing Phase 2 signals and Phase 3 ledger, equivalent-capital buy-and-hold, daily valuation, total return, maximum drawdown, CSV/JSON reports, and a comparison chart.
+- [X] **Phase 5.** The Streamlit dashboard shows current valuation and signal state, editable strategy settings, threshold prices/distances, marked trend and backtest charts, transaction history, and portfolio/benchmark summaries. It was launched and smoke-tested locally.
 
 Phase 3 uses synthetic example defaults of $1,000.00 cash and 0 BTC. They must not be treated as historical starting balances; users should supply balances that were actually available at the start of their replay period without committing private portfolio information.
 
