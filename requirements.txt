@@ -5,4 +5,4 @@ pillow>=13.0,<14.0
 certifi>=2026.10.19
 pytest>=8.0,<10.0
 streamlit>=1.66.1,<2.0
-yfinance>=0.2.54,<1.0
+yfinance>=1.7.0,<2.0
